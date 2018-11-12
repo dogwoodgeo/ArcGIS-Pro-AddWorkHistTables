@@ -1,0 +1,42 @@
+﻿<ArcGIS defaultAssembly="AddWorkHistTables.dll" defaultNamespace="AddWorkHistTables" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{a697ebea-1ac2-4aee-b822-12116ed3f8f2}" version="1.0" desktopVersion="2.2.12813">
+    <Name>AddWorkHistTables</Name>
+    <Description>AddWorkHistTables description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>Bradley.Jones</Author>
+    <Company>Little Rock Water Reclamation Authority</Company>
+    <Date>11/12/2018</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="AddWorkHistTables_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="AddWorkHistTables_Tab1" caption="New Tab">
+          <group refID="AddWorkHistTables_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="AddWorkHistTables_Group1" caption="Add Tables" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="AddWorkHistTables_WorkHistTables" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="AddWorkHistTables_WorkHistTables" 
+                caption="Add Work History Tables" 
+                className="WorkHistTables" 
+                loadOnClick="true" 
+                smallImage="Images\GenericButtonBlue16.png" 
+                largeImage="Images\GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
