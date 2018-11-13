@@ -34,8 +34,6 @@ Visual Studio: 			2017, 2015
 
 ### How To Use Add-In
 
-**NOTE:** The tools in this add-in will only work on the layers if they are named "Manholes" and "Sewer Lines." 
-
 1. Build add-in (see **Getting Started**)
 
 2. Launch ArcGIS Pro.
